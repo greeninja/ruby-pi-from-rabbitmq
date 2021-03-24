@@ -1,4 +1,4 @@
-FROM ubi8/ruby-25:latest
+FROM registry.redhat.io/ubi8/ruby-25:latest
 RUN gem install bunny --no-rdoc
 ADD ./get_pi.rb
 
