@@ -21,7 +21,7 @@ len = channel.queue_declare('foo', durable: true)
 queue = channel.queue('foo', durable: true, auto_delete: false)
 
 
-while len.message_count = 0
+while len.message_count == 0
   puts "[x] Waiting for Queue to be be populated"
   puts "[x] Sleeping for 10 seconds"
   sleep 10
